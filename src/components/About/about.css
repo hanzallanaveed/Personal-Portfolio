@@ -1,0 +1,53 @@
+#about {
+    overflow: hidden;
+    width:100vw;
+    max-width: 85rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0 auto;
+}
+ 
+.aboutTitle{
+    color:white;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+.aboutBars{
+margin:1.5rem;
+width:100vw;
+max-width: 80%;
+text-align: left;
+}
+
+.aboutBar{
+    display:flex;
+    margin:1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.aboutBar:hover {
+    transform: scale(1.1); /* Scales up the entire bar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    background-color: rgb(255, 255, 255);
+    color:black;
+  }
+
+.aboutBarImg{
+    object-fit: cover;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 2rem;
+}
+
+.aboutBarText{
+    font-size: 1rem;
+    font-weight: 300;
+}

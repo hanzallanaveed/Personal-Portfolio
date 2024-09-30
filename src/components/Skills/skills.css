@@ -1,0 +1,78 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0; /* Added padding */
+}
+
+.skillsTitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+.titleDivider {
+    margin: 1rem 0; /* Added margin for spacing */
+    border: 1px solid #00C2F3; /* Color of the divider */
+}
+
+.skillsSection {
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+.skillsSubtitle {
+    color: white;
+    font-size: 2rem; /* Subtitle size */
+    font-weight: 500;
+    margin-bottom: 1rem; /* Space below the subtitle */
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into new rows */
+    justify-content: center; /* Center the skill cards */
+    max-width: 800px; /* Set a maximum width for the container */
+}
+
+.skillCard {
+    background-color: white; /* Background color of the skill card */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem; /* Added padding for better spacing */
+    margin: 0.5rem; /* Space between skill cards */
+    transition: transform 0.2s; /* Add a transition for hover effect */
+    overflow: hidden; /* Ensures any overflow is hidden */
+    width: 90px; /* Fixed width for skill cards */
+    display: flex; /* Align center */
+    flex-direction: column; /* Stack image and name vertically */
+    justify-content: center; /* Center images vertically */
+    align-items: center; /* Center images horizontally */
+}
+
+.skillCard:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    border: 4px solid #2E5FF2;
+}
+
+
+.skillName {
+    margin-top: 0.5rem; /* Space above the skill name */
+    font-size: 0.9rem; /* Font size for skill names */
+    color: #333; /* Color for skill names */
+    text-align: center; /* Center text */
+    font-weight: 700; /* Bold font weight */
+}
+
+
+.skillImage {
+    max-width: 100%; /* Ensure images are responsive */
+    max-height: 70px; /* Set a fixed height for images to ensure uniformity */
+    object-fit: contain; /* Maintain aspect ratio of images */
+}

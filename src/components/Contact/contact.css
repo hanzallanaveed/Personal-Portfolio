@@ -1,0 +1,92 @@
+#contactPage{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin:0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPageTitle{
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+
+.companyDesc{
+padding: 1rem;
+font-size:medium;
+font-weight:300;
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg{
+    font-size: medium;
+    width:100%;
+    max-width:40rem;
+    margin:0.5rem;
+    padding: 0.5rem 1rem;
+    color:white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(40, 40, 40);
+}
+
+.msg{
+    margin-bottom:20px;
+}
+
+.submitBtn {
+    font-weight: bold;
+    background:#00C2F3;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem; /* Reduced padding to make the button skinnier */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-bottom:20px;
+}
+
+.submitBtn:hover {
+    background-color: #0077b5; /* Change background color on hover */
+}
+
+
+.links{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    object-fit: cover;
+    height:3rem;
+    width:3rem;
+    margin: 0 0.75rem;
+    fill: #0077b5;  
+}
+
+.link:hover {
+    transform: scale(1.1);  /* Slightly increase the size on hover */
+    filter: brightness(1.2); /* Increase brightness for a subtle effect */
+  }

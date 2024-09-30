@@ -1,0 +1,109 @@
+#projects {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100%;
+  max-width: 160rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.projectTitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.projectImgs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 165rem;
+  margin: 20px auto;
+}
+
+.projectContainer {
+  background-color: rgb(50,50,50);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 475px;
+  position: relative;
+}
+
+.projectContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projectContainer::after,
+.wordleContainer::after {
+  content: "Click to open GitHub repository";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #004fac;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.projectContainer:hover::after,
+.wordleContainer:hover::after {
+  opacity: 1;
+  top: calc(100% + 10px);
+}
+
+.wordleContainer {
+  background-color: rgb(50,50,50);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 355px;
+}
+
+.wordleContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projectImg {
+  object-fit: cover;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+.projectDescription {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.projectDetails {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
