@@ -78,10 +78,11 @@
   }
   
   .listItem {
-    color: white;
+    color: #00C2F3;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
     background: rgb(30, 30, 30);
+    border-radius:5px;
   }
   
   * {
@@ -136,8 +137,25 @@ main {
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
+        cursor: pointer;
     }
-  
+
+    .navbar {
+        height: 3.5rem;
+        width: 100%;
+        margin: 0 auto;  
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0; /* Stick it to the top */
+      }
+      
+      #intro {
+        margin-top: 300px !important; /* Adjust margin for the background image */
+      }
+      
     .desktopMenu,
     .desktopMenuBtn {
         display: none;
