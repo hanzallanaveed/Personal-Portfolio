@@ -1,35 +1,41 @@
 #intro {
-    height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
-}
-
-.bg {
-    position: absolute;
-    top: -10rem;
-    right: -5rem;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+    padding-bottom: 2rem;
 }
 
 .introContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
     padding: 2rem;
-    font-size: 3rem;
+    margin-top: 220px;
+    font-size: 2rem;
     font-weight: 700;
+    text-align: center;
+}
+
+.bg {
+    position: absolute;
+    top: 0%; /* Position the image higher */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -90%); /* Center without affecting vertical position */
+    height: 240px; /* Adjust size for smaller screens */
+    width: 240px; /* Keep it square for a circle */
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 50%;
+    border: 5px solid #00C2F3;
+    box-sizing: border-box;
 }
 
 .hello {
     font-size: 1.75rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .introText {
@@ -39,7 +45,20 @@
 
 .introName {
     color: #00C2F3;
+    text-shadow: 2px 2px 10px rgba(0, 194, 243, 0.5); /* Glowing effect */
 }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Fade-out effect */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
 
 .introPara {
     font-size: large;
@@ -57,6 +76,12 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.10); 
+    background: linear-gradient(90deg, #0077F3, #00C2F3); /* Reverse gradient */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add deeper shadow */
 }
 
 .btnImg {

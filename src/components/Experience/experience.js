@@ -52,7 +52,7 @@ const Experience = () => {
     return (
         <section id="experience">
             <h1 className='experienceTitle'>Experience</h1>
-            <hr className='titleDivider' style={{ width: '1100px' , marginLeft: '220px'}} />
+            <hr className='titleDivider'/>
             <div id="companies">
                 {['CNL', 'OPG', 'Walmart'].map((company) => (
                     <div 

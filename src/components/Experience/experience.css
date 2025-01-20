@@ -1,6 +1,9 @@
 #experience {
     margin-top: 100px;
-    text-align: center;
+    text-align: center; /* Centers inline and text elements */
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks child elements vertically */
+    align-items: center; /* Centers child elements horizontally */
 }
 
 .experienceTitle {
@@ -10,12 +13,14 @@
 
 .titleDivider {
     border: none;
-    height: 2px;
-    background-color: #00C2F3;
-    margin: 10px auto;
-    width: 70%;
-    display: block;
+    border-top: 1px solid #00C2F3;
+    margin: 10px auto; /* Center it horizontally */
+    width: 1400px; /* Adjust the width as needed */
+    display: block; /* Ensure block-level behavior */
+    box-sizing: border-box; /* Prevent unexpected sizing issues */
 }
+
+
 
 #companies {
     display: flex;
@@ -81,4 +86,21 @@
     color: #666;
     margin-bottom: 1rem;
     font-size: 0.9rem;
+}
+
+/* Add this media query to handle smaller screens */
+@media (max-width: 968px) {
+    #companies {
+        flex-direction: column; /* Stack the logos vertically */
+        align-items: center; /* Center-align the items */
+    }
+
+    .companyImgs {
+        margin: 10px 0; /* Adjust margins for vertical spacing */
+    }
+
+    .companyImg {
+        width: 250px; /* Resize the logos for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
