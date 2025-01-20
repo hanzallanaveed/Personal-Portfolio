@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="projectImgs">
   <a href="https://github.com/hanzallanaveed/TomoAI" target="_blank" rel="noopener noreferrer">
     <div className="projectContainer">
-      <img src={TomoAiImage} alt="CMS Project" className={`projectImg`} style={{ width: '449px', height: '220px' }} />
+      <img src={TomoAiImage} alt="CMS Project" className={`projectImg`} style={{ width: '449px', height: '220px'}} />
       <p className="projectDescription">Generative AI Prompt-Based Web Application</p>
       <p className="projectDetails">
         Built an AI-driven web app with <b style={{ color: '#00C2F3' }}>Next.js</b>, <b style={{ color: '#00C2F3' }}>Express.js</b>, <b style={{ color: '#00C2F3' }}>LangChain</b>, and <b style={{ color: '#00C2F3' }}>MongoDB</b>, integrating <b style={{ color: '#00C2F3' }}>OpenAI GPT</b> for context-aware query responses, streamlining course material management and reducing student query resolution time.
